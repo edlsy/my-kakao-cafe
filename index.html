@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페 - 미니멀 카페</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Cafe KAKAO</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">홈</a></li>
+                <li><a href="#about" class="nav-link">소개</a></li>
+                <li><a href="#menu" class="nav-link">메뉴</a></li>
+                <li><a href="#location" class="nav-link">위치</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">카페 카카오</h1>
+            <p class="hero-subtitle">일상 속 작은 여유를 찾는 공간</p>
+            <a href="#menu" class="cta-button">메뉴 보기</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- 브랜드 소개 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">브랜드 소개</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        미니멀 카페는 단순함과 여유로움을 추구하는 공간입니다.<br>
+                        최고의 원두로 내린 커피와 함께 일상의 소중한 순간을 만나보세요.
+                    </p>
+                    <p class="about-description">
+                        우리는 커피 한 잔이 가진 힘을 믿습니다.<br>
+                        바쁜 일상 속에서 잠시 멈춰 서서 자신만의 시간을 가질 수 있는 곳,<br>
+                        그것이 바로 미니멀 카페입니다.
+                    </p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">☕</div>
+                        <h3>프리미엄 원두</h3>
+                        <p>엄선된 원두로 내린 깊은 맛</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌿</div>
+                        <h3>편안한 공간</h3>
+                        <p>미니멀한 인테리어로 휴식</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">❤️</div>
+                        <h3>따뜻한 서비스</h3>
+                        <p>고객을 위한 세심한 배려</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메뉴 -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">메뉴</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-button active" data-category="coffee">커피</button>
+                <button class="tab-button" data-category="beverage">음료</button>
+                <button class="tab-button" data-category="dessert">디저트</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- 메뉴 아이템들이 JavaScript로 동적으로 추가됩니다 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 위치 및 연락처 -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">위치 및 연락처</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-item">
+                        <h3>주소</h3>
+                        <p>서울특별시 강남구 테헤란로 123<br>미니멀 빌딩 1층</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>영업시간</h3>
+                        <p>월-금: 08:00 - 22:00<br>토-일: 09:00 - 23:00</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>연락처</h3>
+                        <p>전화: 02-1234-5678<br>이메일: info@minimalcafe.com</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <img src="약도 샘플.png" alt="카페 카카오 위치 지도" class="map-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 카페 카카오. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
